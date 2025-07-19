@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and document setup -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GokulHomes</title>
+
+    <!-- External CSS libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-white" style="padding-top: 80px;">
+
+    <!-- ===== DARK MODE TOGGLE BUTTON ===== -->
+    <button id="darkModeToggle" class="btn btn-outline-primary position-fixed" style="bottom: 30px; right: 20px; z-index: 1000; border-radius: 50%; width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+        <i class="bi bi-moon-fill" id="toggleIcon"></i>
+    </button>
+
+    <!-- ===== NAVIGATION BAR ===== -->
+    <nav class="navbar navbar-expand-lg shadow p-3 mb-0 bg-body-tertiary rounded fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-3 fw-bold text-black" href="#">Gokul<span class="text-primary">Homes</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#featured-properties">Properties</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="container-fluid py-5 hero-section" id="home"
+        style="background: url('https://videos.openai.com/vg-assets/assets%2Ftask_01jyhkvg3jffas05xrd66dwqwy%2F1750790517_img_0.webp?st=2025-07-19T18%3A44%3A17Z&se=2025-07-25T19%3A44%3A17Z&sks=b&skt=2025-07-19T18%3A44%3A17Z&ske=2025-07-25T19%3A44%3A17Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=uvsnQQpu3Zj7wxrezWeYZM%2BWAAR3upQOhzmDQ8GvKjU%3D&az=oaivgprodscus') center center/cover no-repeat; min-height: 400px; margin-top: 0;">
+        <div class="row align-items-center" style="background: rgba(255,255,255,0.85); border-radius: 1rem;">
+            <div class="col-12 col-lg-6 offset-lg-3 text-center py-5">
+                <h1 class="display-4 fw-bold text-black mb-3">Find Your <span class="text-primary">Dream Home</span>
+                </h1>
+                <p class="lead mb-4"
+                    style="color: #222; font-weight: 500; text-shadow: 0 2px 8px rgba(255,255,255,0.7), 0 1px 2px rgba(0,0,0,0.08);">
+                    Discover the perfect property for you and your family with Gokul Homes. With over 13 years of
+                    experience, we offer a wide range of properties—from affordable to luxurious—starting at just ₹20
+                    lakhs. Whether you’re looking to buy or lease, our curated listings are tailored to meet your needs
+                    in prime locations like Mohan, Kakori, and along the Agra-Lucknow Expressway.
+                </p>
+                <div class="d-flex justify-content-center">
+                    <a href="#featured-properties" class="btn btn-primary btn-lg px-4">Browse Properties</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="container py-5" id="about">
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-lg-8 text-center">
+                <h2 class="fw-bold mb-3 text-black">About <span class="text-primary">GokulHomes</span></h2>
+                <p class="lead text-muted mb-0">
+                    At Gokul Homes, we are committed to helping you find more than just a property—we help you find your
+                    home. With 13+ years in the real estate industry, we’ve proudly served over 500 customers and
+                    successfully closed more than 1,000 property deals with a 98% customer satisfaction rate.
+                </p>
+                <p class="lead text-muted mb-0">
+                    We specialize in residential and land properties for sale and lease, catering to all budgets and
+                    lifestyles. Whether you're seeking a cozy starter home or a luxurious villa, we offer properties
+                    ranging from 515 to 2,000 sq ft, all at an unbeatable rate of just ₹5,000 per sq ft.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center text-center mt-4">
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <i class="bi bi-house-door-fill text-primary" style="font-size: 2.5rem;"></i>
+                <h6 class="fw-semibold mt-2 mb-1">Curated Listings</h6>
+                <p class="text-muted small mb-0">Carefully selected properties that match your lifestyle and
+                    budget—ensuring value, quality, and satisfaction in every deal.</p>
+            </div>
+            <div class="col-12 col-md-4 mb-4 mb-md-0">
+                <i class="bi bi-people-fill text-primary" style="font-size: 2.5rem;"></i>
+                <h6 class="fw-semibold mt-2 mb-1">Expert Guidance</h6>
+                <p class="text-muted small mb-0">Our seasoned real estate professionals provide honest, transparent
+                    advice—ensuring a smooth and stress-free experience whether you're buying, selling, or leasing.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <i class="bi bi-shield-check text-primary" style="font-size: 2.5rem;"></i>
+                <h6 class="fw-semibold mt-2 mb-1">Trusted Service</h6>
+                <p class="text-muted small mb-0">We believe in building long-term relationships through integrity,
+                    reliability, and unmatched service quality that earns your trust.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED PROPERTIES SECTION ===== -->
+    <section class="container py-5" id="featured-properties">
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold mb-3 text-black">Featured <span class="text-primary">Properties</span></h2>
+                <p class="lead text-muted mb-0">Explore our exclusive selection of handpicked properties in key areas
+                    like Mohan, Kakori, and the Agra-Lucknow Expressway. From compact affordable homes to expansive
+                    luxury villas, each listing offers a perfect balance of comfort, style, and value.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card property-card h-100 shadow-sm border-0">
+                    <img src="./assets/image1.webp" class="card-img-top" alt="Modern Family Home">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">Modern Family Home</h5>
+                        <p class="card-text text-muted small mb-2">A spacious 4-bedroom home in a quiet suburb, perfect
+                            for families seeking comfort and convenience.</p>
+                        <div class="mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1"><i class="bi bi-house"></i> 4
+                                Beds</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1"><i class="bi bi-bath"></i> 3
+                                Baths</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary"><i
+                                    class="bi bi-arrows-fullscreen"></i> 512 sqft</span>
+                        </div>
+                        <div class="fw-semibold text-primary fs-5 mt-2">₹20,00,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card property-card h-100 shadow-sm border-0">
+                    <img src="./assets/image2.webp" class="card-img-top" alt="Downtown Apartment">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">Downtown Apartment</h5>
+                        <p class="card-text text-muted small mb-2">A stylish 2-bedroom apartment in the heart of the
+                            city, close to shops, cafes, and transport.</p>
+                        <div class="mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1"><i class="bi bi-house"></i> 2
+                                Beds</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1"><i class="bi bi-bath"></i> 2
+                                Baths</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary"><i
+                                    class="bi bi-arrows-fullscreen"></i> 1,200 sqft</span>
+                        </div>
+                        <div class="fw-semibold text-primary fs-5 mt-2">$320,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card property-card h-100 shadow-sm border-0">
+                    <img src="./assets/image3.webp" class="card-img-top" alt="Cozy Country Cottage">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">Cozy Country Cottage</h5>
+                        <p class="card-text text-muted small mb-2">Charming 3-bedroom cottage surrounded by nature,
+                            ideal for peaceful living and weekend getaways.</p>
+                        <div class="mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1"><i class="bi bi-house"></i> 3
+                                Beds</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1"><i class="bi bi-bath"></i> 2
+                                Baths</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary"><i
+                                    class="bi bi-arrows-fullscreen"></i> 1,800 sqft</span>
+                        </div>
+                        <div class="fw-semibold text-primary fs-5 mt-2">$275,000</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card property-card h-100 shadow-sm border-0">
+                    <img src="./assets/image4.webp" class="card-img-top" alt="Luxury Villa">
+                    <div class="card-body">
+                        <h5 class="card-title mb-2">Luxury Villa</h5>
+                        <p class="card-text text-muted small mb-2">An elegant 5-bedroom villa with a private pool and
+                            garden, offering the ultimate in luxury living.</p>
+                        <div class="mb-2">
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1"><i class="bi bi-house"></i> 5
+                                Beds</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary me-1"><i class="bi bi-bath"></i> 4
+                                Baths</span>
+                            <span class="badge bg-primary bg-opacity-10 text-primary"><i
+                                    class="bi bi-arrows-fullscreen"></i> 3,800 sqft</span>
+                        </div>
+                        <div class="fw-semibold text-primary fs-5 mt-2">$1,200,000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TEAM SECTION ===== -->
+    <section class="container my-5">
+        <h2 class="text-center fw-bold mb-4">Our Team</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card team-card border-0 shadow-sm text-center h-100">
+                    <div class="card-body">
+                        <img src="./assets/team1.png" alt="Dinesh Pratap Singh" class="rounded-circle mb-3"
+                            style="width: 90px; height: 90px; object-fit: cover;">
+                        <h5 class="card-title mb-1">Dinesh Pratap Singh</h5>
+                        <p class="text-muted mb-2 small">Founder & CEO</p>
+                        <p class="mb-2 small">
+                            <i class="bi bi-telephone me-1"></i>
+                            <a href="tel:+919621461033" class="text-decoration-none text-dark team-phone">+91
+                                9621461033</a>
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://wa.me/12345678901" class="text-success" title="WhatsApp" target="_blank"
+                                rel="noopener">
+                                <i class="bi bi-whatsapp fs-2"></i>
+                            </a>
+                            <a href="mailto:johndoe@email.com" class="text-danger" title="Gmail">
+                                <i class="bi bi-envelope-fill fs-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card team-card border-0 shadow-sm text-center h-100">
+                    <div class="card-body">
+                        <img src="./assets/team1.png" alt="Rajesh Shukla" class="rounded-circle mb-3"
+                            style="width: 90px; height: 90px; object-fit: cover;">
+                        <h5 class="card-title mb-1">Rajesh Shukla</h5>
+                        <p class="text-muted mb-2 small">Co-Founder & Director</p>
+                        <p class="mb-2 small">
+                            <i class="bi bi-telephone me-1"></i>
+                            <a href="tel:+919452334082" class="text-decoration-none text-dark team-phone">+91
+                                9452334082</a>
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://wa.me/919452334082" class="text-success" title="WhatsApp" target="_blank"
+                                rel="noopener">
+                                <i class="bi bi-whatsapp fs-2"></i>
+                            </a>
+                            <a href="mailto:priya.sharma@email.com" class="text-danger" title="Gmail">
+                                <i class="bi bi-envelope-fill fs-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card team-card border-0 shadow-sm text-center h-100">
+                    <div class="card-body">
+                        <img src="./assets/team3.png" alt="Bijendra Pratap Singh" class="rounded-circle mb-3"
+                            style="width: 90px; height: 90px; object-fit: cover;">
+                        <h5 class="card-title mb-1">Bijendra Pratap Singh</h5>
+                        <p class="text-muted mb-2 small">Property Advisor</p>
+                        <p class="mb-2 small">
+                            <i class="bi bi-telephone me-1"></i>
+                            <a href="tel:+917080506233" class="text-decoration-none text-dark team-phone">+91
+                                7080506233</a>
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://wa.me/917080506238" class="text-success" title="WhatsApp" target="_blank"
+                                rel="noopener">
+                                <i class="bi bi-whatsapp fs-2"></i>
+                            </a>
+                            <a href="mailto:rahul.verma@email.com" class="text-danger" title="Gmail">
+                                <i class="bi bi-envelope-fill fs-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card team-card border-0 shadow-sm text-center h-100">
+                    <div class="card-body">
+                        <img src="./assets/team4.png" alt="Honey Gupta" class="rounded-circle mb-3"
+                            style="width: 90px; height: 90px; object-fit: cover;">
+                        <h5 class="card-title mb-1">Honey Gupta</h5>
+                        <p class="text-muted mb-2 small">Marketing Lead</p>
+                        <p class="mb-2 small">
+                            <i class="bi bi-telephone me-1"></i>
+                            <a href="tel:+918009925900" class="text-decoration-none text-dark team-phone">+91
+                                8009925900</a>
+                        </p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="https://wa.me/918009925900" class="text-success" title="WhatsApp" target="_blank"
+                                rel="noopener">
+                                <i class="bi bi-whatsapp fs-2"></i>
+                            </a>
+                            <a href="mailto:anjali.mehta@email.com" class="text-danger" title="Gmail">
+                                <i class="bi bi-envelope-fill fs-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT & LOCATION SECTION ===== -->
+    <section class="container py-5" id="contact-us">
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 text-center">
+                <h2 class="fw-bold mb-3 text-black">Locate<span class="text-primary"> Us</span></h2>
+                <p class="lead text-muted mb-0">We'd love to hear from you. Find us on the map below.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card border-0 shadow-sm contact-info-card">
+                    <div class="card-body text-center p-4">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mb-3 mb-md-0">
+                                <i class="bi bi-geo-alt-fill text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h6 class="fw-semibold mb-2">Our Address</h6>
+                                <p class="text-muted mb-0 small">J.B. Garden Valley<br>Mohan Road, Lucknow</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <i class="bi bi-telephone-fill text-primary mb-3" style="font-size: 2rem;"></i>
+                                <h6 class="fw-semibold mb-2">Call Us</h6>
+                                <div class="d-flex flex-column gap-2">
+                                    <a href="tel:+919621461033" class="text-decoration-none text-dark small">
+                                        <i class="bi bi-phone me-1"></i>+91 9621461033
+                                    </a>
+                                    <a href="tel:+919452334082" class="text-decoration-none text-dark small">
+                                        <i class="bi bi-phone me-1"></i>+91 9452334082
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10">
+                <div class="ratio ratio-16x9 rounded-3 shadow-sm overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps?q=RRPF%2BH34%2C%20Narona%2C%20Uttar%20Pradesh%20226101&output=embed&maptype=satellite"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        title="GokulHomes Location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer class="bg-dark border-0 py-3 mt-5">
+        <div class="container text-center">
+            <small class="text-light">&copy; 2025 GokulHomes. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT LIBRARIES ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- ===== DARK MODE SCRIPT ===== -->
+    <script>
+        // Dark mode functionality
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const body = document.body;
+
+        // Check for saved dark mode preference
+        const darkMode = localStorage.getItem('darkMode');
+        if (darkMode === 'enabled') {
+            body.classList.add('dark-mode');
+            toggleIcon.classList.remove('bi-moon-fill');
+            toggleIcon.classList.add('bi-sun-fill');
+        }
+
+        // Toggle dark mode
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                localStorage.setItem('darkMode', 'enabled');
+                toggleIcon.classList.remove('bi-moon-fill');
+                toggleIcon.classList.add('bi-sun-fill');
+            } else {
+                localStorage.setItem('darkMode', null);
+                toggleIcon.classList.remove('bi-sun-fill');
+                toggleIcon.classList.add('bi-moon-fill');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
