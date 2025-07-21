@@ -1,0 +1,84 @@
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #f8f9fa;
+  color: #222;
+}
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(rgba(13,110,253,0.08), rgba(255,255,255,0.9)), url('assets/image1.webp') center/cover no-repeat;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.hero h1, .hero p {
+  color: #222;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.2);
+}
+
+.btn-primary {
+  background: #0d6efd;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #0b5ed7;
+}
+
+.card {
+  border-radius: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(13,110,253,0.08);
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+footer {
+  font-size: 1rem;
+}
+
+#contactForm .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,0.08);
+}
+
+@media (max-width: 991px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    min-height: 60vh;
+    padding-top: 80px;
+    padding-bottom: 20px;
+  }
+  .card {
+    margin-bottom: 1.5rem;
+  }
+}
